@@ -1,0 +1,438 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Ubuntu&display=swap');*/
+
+html, body {
+	margin: 0;
+	padding: 0;
+/*	box-sizing: border-box;*/
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 48px;
+}
+
+p {
+	font-size: 22px;
+	padding: 10px 0;
+}
+
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.6s;
+	padding: 40px 100px;
+	z-index: 100;
+}
+
+nav .logo {
+	position: relative;
+	font-weight: 700;
+	color: #FFCA03;
+	text-decoration: none;
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: 0.6s;
+}
+
+nav ul {
+	position: relative;
+	display: flex;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+/*	background: rgba(0, 0, 0, 0);*/
+/*	text-align: center;*/
+}
+
+nav ul li {
+/*	display: inline-block;*/
+	position: relative;
+	list-style: none;
+}
+
+nav ul li a {
+	position: relative;
+	margin: 0 15px;
+	text-decoration: none;
+	color: #FFCA03;
+	letter-spacing: 2px;
+	font-weight: 500px;
+	transition: 0.6s;
+}
+
+/*-----sections-----*/
+
+.section-top {
+/*	position: relative;*/
+/*	width: 100%;*/
+/*	height: 60vh;*/
+/*	background-size: cover;*/
+}
+
+.section-top-h1,
+.section-top-p {
+	color: #000;
+}
+
+.d-block {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+}
+
+.section-two {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: url(images/sport1.jpg) no-repeat 50% 50%;
+	background-size: cover;
+}	
+
+.inner-section {
+	width: 100%;
+	position: absolute;
+/*	display: block;*/
+	text-align: center;
+	bottom: 5rem;
+	align-items: center;
+}
+
+
+.section-three {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: url(images/sport4.jpg) no-repeat 50% 50%;
+	background-size: cover;
+}
+
+.section-four {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-color: #fff;
+}
+
+.section-div {
+	color: #000;
+}
+
+
+.shop {
+	width: 440px;
+	height: 100vh;
+	position: relative;
+	display: inline-block;
+	margin-left: 7px;
+	margin-right: -5px;
+	background-color: #F4F4F4;
+	bottom: 0;
+}
+
+.shop img{
+	width: 300px;
+	height: 50vh;
+	position: relative;
+	top: 120px;
+	display: block;
+	align-items: center;
+	text-align: center;
+}
+
+.shop button {
+	width: 30%;
+	padding: 0;
+/*	margin-top: 100px;*/
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	border-width: 3px;
+	border-radius: 3px;
+	position: relative;
+	top: 170px;
+}
+
+
+.shop h3 {
+/*	margin-top: 80px;*/
+	font-weight: 500;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	text-align: center;
+	position: relative;
+	top: 150px;
+}
+
+
+
+/*----carousel-----*/
+
+
+.carousel-caption {
+	position: absolute;
+	bottom: 5rem;
+}
+
+.button-light {
+	font-size: 20px;
+	width: 25%;
+	color: #fff;
+	border-width: 3px;
+	border-radius: 3px;
+	padding: 0;
+}
+
+.button-dark {
+	font-size: 20px;
+	width: 25%;
+	color: #000;
+	border-width: 3px;
+	border-radius: 3px;
+	padding: 0;
+}
+
+
+/*-----sticky----*/
+
+nav.sticky {
+	background: #fff;
+	padding: 15px 30px;
+}
+
+nav.sticky .logo,
+nav.sticky ul li a {
+	color: #000;
+}
+
+
+/*----toggleButton----*/
+
+.menu-icon {
+	position: absolute;
+	top: 16px;
+	left: 85%;
+	width: 30px;
+	height: 30%;
+	color: #000;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 30px 24px;
+	cursor: pointer;
+	color: #000;
+	display: none;
+}
+
+
+@media (max-width:1024px) {
+
+	.menu-icon {
+		display: block;
+		padding: 10px 20px;
+	}
+
+	nav {
+
+		background: #fff;
+		padding: 10px 20px;
+	}
+
+	nav .logo {
+		color: #000;
+	}
+
+	nav ul {
+		display: block;
+		position: absolute;
+		width: 100%;
+		max-height: 0px;
+		background: #fff;
+		text-align: center;
+		padding: 0;
+		margin: 0;
+		left: 0px;
+		top: 60px;
+		transition: 0.6s;
+	}
+
+	nav ul li {
+		display: inline-block;
+		width: 100%;
+		padding: 24px 0;
+		text-align: center;
+		
+	}
+
+	nav ul li a {
+		color: #000;
+	}
+
+	nav.sticky {
+		background: #fff;
+/*		padding: 30px 30px;*/
+	}
+
+	nav.sticky .logo {
+		color: #000;
+	}
+
+	nav.sticky ul li a {
+		color: #000;
+	}
+
+	.showing {
+		position: absolute;
+		left: 0;
+		top:60px;
+		width: 100%;
+		display: block;
+		max-height: 20em;
+		color: #000;
+	}
+}
+
+
+
+/*.logo {
+	position: fixed;
+	float: left;
+	margin: 16px 36px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+nav {
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
+}
+
+nav ul {
+	list-style: none;
+	background: rgba(0, 0, 0, 0);
+	overflow: hidden;
+	color: #fff;
+	padding: 0;
+	text-align: center;
+	margin: 0;
+	transition: .6s;
+}
+
+nav.sticky ul {
+	background: #fff;
+}
+
+nav.sticky .logo {
+	color: #000;
+}
+
+nav.sticky ul li a {
+	color: #000;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 20px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+}
+
+.menu-icon {
+	position: absolute;
+	top: 16px;
+	left: 85%;
+	width: 5%;
+	height: 5%;
+	background: #fff;
+	color: #000;
+	text-align: right;
+	box-sizing: border-box;
+	padding: 15px 24px;
+	cursor: pointer;
+	color: blue;
+	display: none;
+}
+
+section {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+}
+
+.banner {
+	background: url(images/lift.jpg) no-repeat 50% 50%;
+	background-size: cover;
+}
+
+.second {
+	background: url(images/bench.jpg);	
+	background-size: cover;
+}
+
+.third {
+	background: url(images/gym.jpg);	
+	background-size: cover;
+}
+
+@media (max-width:700px) {
+	.logo {
+		position: fixed;
+		top: 0;
+		margin-top: 16px;
+	}
+	
+
+	nav ul {
+		max-height: 0px;
+		background: #fff;
+	}
+
+	nav ul li a {
+		color: #000;
+	}
+
+	nav.sticky ul {
+	color: #fff ;
+	}
+
+	nav.sticky .logo {
+		color: #fff;
+	}
+
+	nav.sticky ul li a {
+		color: #000;
+	}
+*/	/*nav.sticky {
+		background: #fff;
+	}
+
+	.showing {
+		max-height: 20em;
+		color: #000;
+	}
+
+	nav ul li {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 24px 0;
+		text-align: center;
+	}
+
+	.menu-icon {
+		display: block;
+	}
+}*/
