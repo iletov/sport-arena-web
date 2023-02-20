@@ -45,7 +45,7 @@ nav:hover {
 nav .logo {
   position: relative;
   font-weight: 700;
-  color: #CF0A0A;
+  color: #BE0000;
   text-decoration: none;
   font-size: 2rem;
   text-transform: uppercase;
@@ -74,7 +74,7 @@ nav ul li a {
   font-size: 1.2rem;
   margin: 0 15px;
   text-decoration: none;
-  color: #CF0A0A;
+  color: #BE0000;
   letter-spacing: 2px;
   font-weight: 700;
 }
@@ -99,20 +99,18 @@ section div {
 /*  width: 100%;*/
 }
 
-button {
+.btn {
   position: relative;
   top: 20rem;
   width: 240px;
-  margin-right: 12px;
+  font-weight: 500;
+  border-width: 2px;
 }
 
-button .btn-dark {
-  right: 200px;
-}
+
 
 
 section {
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -123,23 +121,28 @@ section {
 
 
 .one {
-  background: url(images/swimm2.jpg) no-repeat 50% 50%;
+  background: url(images/swimm3.jpg) no-repeat 50% 50%;
   background-size: cover;
 }
 
 .two {
-  background: url(images/swimm3.jpg) no-repeat 50% 50%; 
+  background: url(images/gym1.jpg) no-repeat 50% 50%; 
   background-size: cover;
 }
 
+.two p,
+.two h1 {
+  color: #fff;
+}
 
 .three {
-  background: url(images/swimm5.jpg) no-repeat 50% 50%; 
+  background: url(images/massage.jpg) no-repeat 50% 50%; 
   background-size: cover;
 }
 
+
 .four {
-  background: url(images/swimm6.jpg) no-repeat 50% 50%; 
+  background: url(images/climb.jpg) no-repeat 50% 50%; 
   background-size: cover;
 }
 
