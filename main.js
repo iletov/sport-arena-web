@@ -1,3 +1,4 @@
+// --------Side Menu------
 
 $(".side-button").on("click", function() {
 	$(".container").toggleClass("active")
@@ -7,4 +8,13 @@ $(".side-button").on("click", function() {
     }
 });
 
+// ---------Navbar Hover-----
+
+$("nav").mouseover(function(){
+    $("ul li a").css("color", "#fff")
+    $(".logo").css("color", "#fff")
+}).mouseout(function() {
+    $("ul li a").css("color", "")
+    $(".logo").css("color", "")
+})  
 
