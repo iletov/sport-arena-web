@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500&display=swap');
+
+
+html, body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.btn {
+	border-width: 1px;
+	border-radius: 1px;
+}
+
+.first-nav {
+	position: relative;
+	top: 0px;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 100px;
+	margin: 0;
+	color: #fff;
+	background-color: #126577;
+}
+
+.first-nav ul {
+	position: relative;
+	display: flex;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+}
+
+.first-nav ul li {
+	position: relative;
+	list-style: none;
+	margin-top: 5px;
+	margin-bottom: -5px;
+}
+
+.first-nav ul li a {
+	position: relative;
+	margin-right: 25px;
+	text-decoration: none;
+	color: #fff;
+	letter-spacing: 2px;
+	font-weight: 500px;
+	transition: 0.6s;
+}
+
+
+.second-nav {
+	position: fixed;
+	top: 30px;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.2s;
+	padding: 20px 100px;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+	transition: all 0.6s;
+	z-index: 2;
+}
+
+.shadow {
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12) ;
+	background-color: #fff;
+}
+
+.second-nav.logo {
+	position: relative;
+	font-weight: 700;
+	color: #fff;
+	text-decoration: none;
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: 0.6s;
+}
+
+.second-nav ul {
+	position: relative;
+	display: flex;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5px;
+	margin-bottom: 0;
+/*	background: rgba(0, 0, 0, 0);*/
+/*	text-align: center;*/
+}
+
+.second-nav ul li {
+/*	display: inline-block;*/
+	position: relative;
+	list-style: none;
+}
+
+.second-nav ul li a {
+	position: relative;
+	margin: 0 15px;
+	text-decoration: none;
+	color: #222629;
+	letter-spacing: 2px;
+	font-weight: 500px;
+	transition: 0.6s;
+}
+
+.second-nav ul li a:hover {
+	color: #126577;
+}
+
+.second-nav ul li a.btn {
+	border-color: #126577;
+	background-color: #126577;
+	color: #fff;
+}
+
+.second-nav ul li a.btn:hover {
+	border-color: #126577;
+	background-color: #fff;
+	color: #126577;
+}
+
+/*---sections---*/
+.top {
+	width: 100%;
+	height: 120vh;
+	padding-top: 100px;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+}
+
+.card {
+	margin: 2%;;
+	border-width: 0;
+}
+
+.card img {
+	border-radius: 1px;
+	height: 14rem;
+}
+
+.section-wrap {
+	position: relative;
+	display: block;
+	text-align: center;
+	padding-bottom: 40px;
+}
+
+.card-body > h5 {
+	padding-bottom: 12%;
+} 
+
+.card-body > p {
+	padding-bottom: 5%;
+}
+
+.card-body > .btn {
+	border-width: 0px;
+	border-radius: 1px;
+	color: #222629;
+	transition: .6s;
+}
+
+.card-body > .btn:hover {
+	background-color: #fff;
+	border-width: 0px;
+	color: #126577;
+	margin-left: 3px;
+	transition: .6s;
+}
+
+/*-----section two-----*/
+
+.swimm-two > .img-container {
+	width: 100%;
+	height: 60vh;
+	padding: 5%;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.6)url(images/underwatter.jpg) no-repeat;
+	background-position: cover;
+	background-size: 100% 100%;
+	background-blend-mode: darken;
+	background-attachment: fixed;
+}
+
+.swimm-two > .img-container h1 {
+	font-weight: 500;
+	color: #fff;
+	font-size: 32px;
+	margin-bottom: 6%;
+}
+
+.swimm-two > .img-container p {
+	font-weight: 500;
+	color: #fff;
+	font-size: 20px;
+	margin: 3% 0;
+}
+
+.swimm-two > .img-container button {
+	padding: 10px;
+	font-weight: 300;
+}
+
+.swimm-two > .img-container button:hover {
+	font-weight: 500;
+}
+
+/*-----section three------*/
+
+.swimm-three {
+	padding-top: 100px;
+}
+
+.container img {
+	height: 14rem;
+}
+
+.container h5 {
+	margin-top: 15px;
+	padding-bottom: 2px;
+}
+
+.container p {
+	margin: 0;
+	font-size: 14px;
+}
+
+.container span {
+	color: grey;
+}
+
+.container > .card > .date-card {
+	position: absolute;
+	border-radius: 5px;
+	width: 85px;
+	height: 85px;
+	bottom: 160px;
+	left: 20px;
+	padding: 0;
+	margin: 0;
+	font-size: 22px;
+	text-align: center;
+	background-color: #fff;
+	transition: 0.5s;
+}
+
+.container > .card:hover > .date-card {
+	background-color: #126577;
+	color: #fff;
+	transition: 0.5s;
+	bottom: 175px;
+}
+
+.container > .card:hover > .date-card p span {
+	color: #fff;
+	transition: 0.5s;
+}
+
+.container > .card > .date-card p span {
+	font-size: 34px;
+	color: #126577;
+	transition: 0.5s;
+}
+
+/*-----section four------*/
+
+.swimm-four >  .img-container {
+	width: 100%;
+	height: 30vh;
+	padding: 5%;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.6)url(images/swim-background.jpg) no-repeat;
+	background-position: cover;
+	background-size: 100% 100%;
+	background-blend-mode: darken;
+	background-attachment: fixed;
+}
+
+.swimm-four > .img-container h1 {
+	font-weight: 500;
+	color: #fff;
+	font-size: 28px;
+	margin-bottom: 3%;
+}
+
+.swimm-four > .img-container p {
+	font-weight: 500;
+	color: #fff;
+	font-size: 20px;
+	margin: 3% 0;
+}
