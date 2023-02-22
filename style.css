@@ -182,6 +182,13 @@ section {
 .container ul li a {
   text-decoration: none;
   color: #FAED26;
+  transition: .2s;
+}
+
+.container ul li a:hover {
+  position: relative;
+  margin-left: 5px;
+  transition: .2s;
 }
 
 .active {

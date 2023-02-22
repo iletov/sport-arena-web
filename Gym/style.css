@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500&display=swap');
 
 html, body {
 	margin: 0;
@@ -11,7 +11,15 @@ hr {
 	width: 80%;
 	align-items: center;
 	margin: 0 10%;
+}
 
+h1, p {
+	font-weight: 300;
+}
+
+a {
+	text-decoration: none;
+	color: #222629;
 }
 
 #top {
@@ -30,7 +38,7 @@ hr {
 }
 
 .section-top h1 {
-	font-weight: 700;
+	font-weight: 200;
 	font-size: 48px;
 }
 
@@ -57,7 +65,7 @@ nav {
 nav .logo {
 	position: relative;
 	font-weight: 700;
-	color: #FFCA03;
+	color: #fff;
 	text-decoration: none;
 	font-size: 2rem;
 	text-transform: uppercase;
@@ -85,7 +93,7 @@ nav ul li a {
 	position: relative;
 	margin: 0 15px;
 	text-decoration: none;
-	color: #FFCA03;
+	color: #fff;
 	letter-spacing: 2px;
 	font-weight: 500px;
 	transition: 0.6s;
@@ -93,7 +101,14 @@ nav ul li a {
 
 /*-----sections-----*/
 
+
+.carousel-item {
+	background-color: black;
+}
+
+
 .d-block {
+	opacity: 0.4;
 	position: relative;
 	width: 100%;
 	height: 100vh;
@@ -103,12 +118,13 @@ nav ul li a {
 	width: 100%;
 	height: 80vh;
 	padding: 120px;
+	background-color: #1E5128;
 }
 
 .section-two h1 {
 	font-size: 34px;
 	text-align: center;
-	color: #126577;
+	color: #fff;
 }	
 
 .section-three {
@@ -129,14 +145,16 @@ nav ul li a {
 
 .section-three h1 {
 	position: absolute;
-	font-weight: 100;
+	font-weight: 300;
 	width: 400px;
 	top: 100px;
+	color: #222629;
 }
 
 .section-three p {
 	position: relative;
 	width: 400px;
+	color: #222629;
 /*	height: 100%;*/
 /*	top: 200px;*/
 }
@@ -147,115 +165,95 @@ nav ul li a {
 	bottom: 100px;
 	padding: 15px;
 	border-radius: 1px;
-	border-color: #126577;
+	border-color: #1E5128;
 }
 
 .section-three .btn:hover {
-	background-color: #126577;
+	background-color: #1E5128;
 }
 
 .section-four {
 	position: relative;
+	align-items: center;
+	padding-left: 100px;
 	width: 100%;
 	height: 100vh;
 	background-color: #fff;
 }
 
-.section-five {
-	width: 100%;
+.row {
+	max-width: 100%;
+}
+
+.col {
+	width: 400px;
+}
+
+.col img {
+	height: 350px;
+}
+
+.section-five-wrap {
+	max-width: 100%;
 	height: 100vh;
-	background-color: #126577;
-	padding: 80px 250px;
+}
+
+.section-five-wrap {
+	max-width: 100%;
+	background: rgba(0, 0, 0, 0.4) url(images/rope.jpg) no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	background-blend-mode: darken;
+	background-attachment: fixed;
 }
 
 
-.section-five h1 {
+.section-five-wrap h1 {
+	position: absolute;
+	margin-top: 180px;
+	margin-left: 100px;
 	color: #fff;
 	font-size: 42px;
-	text-align: center;
 }
 
-.section-five p {
+.section-five-wrap p {
+	position: absolute;
+	margin-top: 250px;
+	margin-left: 100px;
 	color: #fff;
-	text-align: center;
-	padding-top: 80px;
 }
 
 .section-five button {	
 	color: #fff;
+	
 	position: absolute;
-	right: 42%;
+	margin-top: 350px;
+	margin-left: 100px;
 	width: 210px;
 	border-radius: 1px;
 	border-color: #fff;
-	margin-top: 30px;
 	padding: 18px;
 	text-transform: uppercase;
 }
 
 .section-five button:hover {
-	background-color: #fff;
-	color: #126577;
-	border-color: #126577;
+	background-color: #1E5128;
+	color: #fff;
+	border-color: #1E5128;
 }
 
 .section-div {
 	color: #000;
 }
 
-
-.shop {
-	width: 440px;
-	height: 100vh;
-	position: relative;
-	display: inline-block;
-	margin-left: 7px;
-	margin-right: -5px;
-	background-color: #F4F4F4;
-	bottom: 0;
-}
-
-.shop img{
-	width: 300px;
-	height: 50vh;
-	position: relative;
-	top: 120px;
-	display: block;
-	align-items: center;
+.footer-wrap {
+	padding: 6% 0 6%;
 	text-align: center;
 }
 
-.shop button {
-	width: 30%;
-	padding: 10px;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	border-width: 1px;
-	border-radius: 1px;
-	position: relative;
-	top: 170px;
-	font-size: 20px;
-	border-color: #126577;
+.footer-wrap i {
+	margin: 2% 1%;
 }
-
-.shop button:hover {
-	background-color: #126577;
-}
-
-.shop h3 {
-/*	margin-top: 80px;*/
-	font-weight: 500;
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
-	display: block;
-	text-align: center;
-	position: relative;
-	top: 150px;
-}
-
-
 
 /*----carousel-----*/
 
@@ -293,7 +291,7 @@ nav.sticky {
 
 nav.sticky .logo,
 nav.sticky ul li a {
-	color: #126577;
+	color: #1E5128;
 }
 
 
